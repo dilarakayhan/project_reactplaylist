@@ -25,8 +25,9 @@ class Form extends React.Component {
                         className="custom-select"
                         name="genre"
                         onChange={this.props.handleInputChange}
+                        defaultValue={"default"}
                     >
-                        <option value=" " disabled selected>
+                        <option value="default" disabled selected>
                             select a genre
                         </option>
                         <option value="Rock">
@@ -45,8 +46,10 @@ class Form extends React.Component {
 
                     <select
                         name="rating"
-                        onChange={this.props.handleInputChange}>
-                        <option value=" " disabled selected>rate your song</option>
+                        onChange={this.props.handleInputChange}
+                        defaultValue={"default"}
+                    >
+                        <option value="default" disabled>rate your song</option>
                         <option value="⭐">
                             ⭐
                         </option>

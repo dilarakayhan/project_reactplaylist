@@ -38,6 +38,7 @@ class Container extends React.Component {
     };
 
     handleInputChange = (e) => {
+        // {input, name}
         let input = e.target;
         let name = e.target.name;
         let value = input.value;
